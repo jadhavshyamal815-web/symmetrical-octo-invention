@@ -1,0 +1,11 @@
+Evidence ID,Reference Product,Candidate Product,Evidence Category,Study/Source,Measurement,Result,Control,Evidence Quality,Validation Status,Limitation,Reviewer Note
+SYN-001,Reference-Bio-A,Candidate-Bio-B,Analytical,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Analytical characterization,High similarity,Reference-Bio-A,High,VERIFIED,Synthetic record,Complete for software testing
+SYN-002,Reference-Bio-A,Candidate-Bio-B,Structural,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Structural assessment,Comparable,Reference-Bio-A,High,VERIFIED,No raw data,Synthetic structural record
+SYN-003,Reference-Bio-A,Candidate-Bio-B,Functional,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Biological activity,Comparable,Reference-Bio-A,Moderate,PARTIAL,Validation incomplete,Needs review
+SYN-004,Reference-Bio-A,Candidate-Bio-B,Pharmacokinetic,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,PK assessment,Broadly comparable,Reference-Bio-A,Moderate,NEEDS REVIEW,Statistical reporting incomplete,Human review required
+SYN-005,Reference-Bio-A,Candidate-Bio-B,Pharmacodynamic,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,PD assessment,Comparable,Reference-Bio-A,Moderate,VERIFIED,Raw data unavailable,QC status only
+SYN-006,Reference-Bio-A,Candidate-Bio-B,Immunogenicity,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Immune response assessment,No apparent difference,Reference-Bio-A,Partial,NEEDS REVIEW,Assay details unavailable,Additional review required
+SYN-007,Reference-Bio-A,Candidate-Bio-B,Preclinical,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Nonclinical assessment,Comparable,Reference-Bio-A,High,VERIFIED,No actual study report,Software testing only
+SYN-008,Reference-Bio-A,Candidate-Bio-B,Analytical,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Similarity assessment,Partially similar,Reference-Bio-A,Low,INSUFFICIENT,Validation and raw data missing,Insufficient information
+SYN-009,Reference-Bio-A,Candidate-Bio-B,Functional,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Functional assessment,Conflicting records,Reference-Bio-A,Low,CONFLICTING,Unresolved difference,Human review required
+SYN-010,Reference-Bio-A,Candidate-Bio-B,Preclinical,SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING,Nonclinical assessment,Incomplete report,Reference-Bio-A,Low,PARTIAL,Raw data and statistics missing,Additional documentation required
