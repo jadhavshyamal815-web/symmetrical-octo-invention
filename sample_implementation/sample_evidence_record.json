@@ -1,0 +1,16 @@
+{
+  "evidence_id": "EV-SAMPLE-001",
+  "source_id": "SRC-SAMPLE-001",
+  "concept": "Curcuma longa / curcumin",
+  "evidence_category": "PRECLINICAL",
+  "study_design": "Fictional sample evidence record for framework testing",
+  "population_or_model": "Synthetic example model",
+  "intervention_or_exposure": "Curcumin preparation",
+  "comparator": "Control",
+  "outcome": "Demonstration of evidence tracking",
+  "main_finding": "Synthetic record used only to demonstrate evidence traceability and validation.",
+  "evidence_strength": "MODERATE",
+  "limitations": "Synthetic data; not suitable for scientific, clinical, regulatory, or therapeutic conclusions.",
+  "contradiction_status": "NONE",
+  "provenance_note": "SYNTHETIC DATA - CREATED FOR TESTING ONLY"
+}

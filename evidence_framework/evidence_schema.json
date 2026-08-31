@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scientific Evidence and Translational Research Evidence Schema",
+  "description": "Reusable schema for recording scientifically traceable evidence from public sources.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "source_id",
+    "concept",
+    "evidence_category",
+    "evidence_strength",
+    "provenance",
+    "version"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "description": "Unique identifier for the evidence record.",
+      "pattern": "^EV-[0-9]{3,}$"
+    },
+    "source_id": {
+      "type": "string",
+      "description": "Identifier linking the evidence record to the source register.",
+      "pattern": "^SRC-[0-9]{3,}$"
+    },
+    "concept": {
+      "type": "string",
+      "description": "Botanical or biological concept being evaluated.",
+      "minLength": 1
+    },
+    "evidence_category": {
+      "type": "string",
+      "enum": [
+        "TRADITIONAL_KNOWLEDGE",
+        "IN_VITRO",
+        "IN_VIVO",
+        "HUMAN_OBSERVATIONAL",
+        "HUMAN_RANDOMIZED",
+        "SYSTEMATIC_REVIEW",
+        "META_ANALYSIS",
+        "METHODOLOGY",
+        "OTHER"
+      ]
+    },
+    "study_design": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "population_or_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "intervention_or_exposure": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "outcome": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "main_finding": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_strength": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MODERATE",
+        "LOW",
+        "VERY_LOW",
+        "INSUFFICIENT",
+        "UNKNOWN"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Known limitations affecting interpretation of the evidence."
+    },
+    "contradiction_status": {
+      "type": "string",
+      "enum": [
+        "NO_CONTRADICTION",
+        "OPEN",
+        "PARTIALLY_CONFLICTING",
+        "CONTRADICTION_TEST",
+        "RESOLVED_BY_DOWNGRADE",
+        "RESOLVED_BY_BOUNDARY",
+        "UNKNOWN"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_title",
+        "source_type",
+        "source_identifier",
+        "access_date",
+        "version"
+      ],
+      "properties": {
+        "source_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_identifier": {
+          "type": "string",
+          "minLength": 1
+        },
+        "access_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance_note": {
+          "type": "string"
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "description": "Version of the evidence record.",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    }
+  }
+}
