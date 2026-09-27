@@ -1,0 +1,456 @@
+{
+  "conflicts": [
+    {
+      "field": "measurement_method",
+      "study_id": "STUDY-QC-004",
+      "type": "CONFLICTING_FIELD",
+      "values": [
+        {
+          "index": 3,
+          "value": "Synthetic Assay Method A"
+        },
+        {
+          "index": 4,
+          "value": "Synthetic Assay Method B"
+        }
+      ]
+    },
+    {
+      "field": "statistical_reporting",
+      "study_id": "STUDY-QC-004",
+      "type": "CONFLICTING_FIELD",
+      "values": [
+        {
+          "index": 3,
+          "value": "Synthetic statistical reporting A"
+        },
+        {
+          "index": 4,
+          "value": "Synthetic statistical reporting B"
+        }
+      ]
+    }
+  ],
+  "duplicates": [
+    {
+      "duplicate_index": 4,
+      "first_index": 3,
+      "type": "DUPLICATE_STUDY_ID",
+      "value": "STUDY-QC-004"
+    },
+    {
+      "duplicate_index": 8,
+      "first_index": 7,
+      "type": "DUPLICATE_EVIDENCE_ID",
+      "value": "EVID-QC-007"
+    },
+    {
+      "duplicate_index": 8,
+      "first_index": 7,
+      "type": "DUPLICATE_STUDY_ID",
+      "value": "STUDY-QC-007"
+    }
+  ],
+  "engine_version": "1.0.0",
+  "human_review_required_count": 11,
+  "record_count": 11,
+  "results": [
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": true,
+        "missing_fields": []
+      },
+      "evidence_id": "EVID-QC-001",
+      "evidence_quality": "VERIFIED",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 0,
+      "reason": "Required QC fields are structurally complete.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-001",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": true,
+        "missing_fields": []
+      },
+      "evidence_id": "EVID-QC-002",
+      "evidence_quality": "PARTIAL",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 1,
+      "reason": "Raw-data availability is incomplete.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-002",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": false,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": false,
+        "missing_fields": [
+          "source"
+        ]
+      },
+      "evidence_id": "EVID-QC-003",
+      "evidence_quality": "INSUFFICIENT",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 2,
+      "reason": "Required evidence information is incomplete.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-003",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": true,
+        "missing_fields": []
+      },
+      "evidence_id": "EVID-QC-004-A",
+      "evidence_quality": "CONFLICTING",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 3,
+      "reason": "Conflicting values were detected for the study.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-004",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": true,
+        "missing_fields": []
+      },
+      "evidence_id": "EVID-QC-004-B",
+      "evidence_quality": "CONFLICTING",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 4,
+      "reason": "Conflicting values were detected for the study.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-004",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": false,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": false,
+        "missing_fields": [
+          "measurement_method"
+        ]
+      },
+      "evidence_id": "EVID-QC-005",
+      "evidence_quality": "INSUFFICIENT",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 5,
+      "reason": "Required evidence information is incomplete.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-005",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": false,
+          "synthetic_data_declaration": true
+        },
+        "complete": false,
+        "missing_fields": [
+          "study_id"
+        ]
+      },
+      "evidence_id": "EVID-QC-006",
+      "evidence_quality": "INSUFFICIENT",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 6,
+      "reason": "Required evidence information is incomplete.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": true,
+        "missing_fields": []
+      },
+      "evidence_id": "EVID-QC-007",
+      "evidence_quality": "NEEDS REVIEW",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 7,
+      "reason": "Duplicate evidence identifier detected.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-007",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": true,
+        "missing_fields": []
+      },
+      "evidence_id": "EVID-QC-007",
+      "evidence_quality": "NEEDS REVIEW",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 8,
+      "reason": "Duplicate evidence identifier detected.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-007",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": true,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": true,
+        "missing_fields": []
+      },
+      "evidence_id": "EVID-QC-008",
+      "evidence_quality": "INSUFFICIENT",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 9,
+      "reason": "Record failed structural or state validation.",
+      "reviewer_status": "NOT A VALID REVIEW STATE",
+      "study_id": "STUDY-QC-008",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [
+          "Invalid reviewer_status"
+        ],
+        "valid": false
+      }
+    },
+    {
+      "completeness": {
+        "checks": {
+          "control_identification": true,
+          "evidence_category": false,
+          "experimental_conditions": true,
+          "limitations": true,
+          "measurement_method": true,
+          "method_validation_status": true,
+          "protocol_reference": true,
+          "raw_data_availability": true,
+          "reproducibility": true,
+          "sample_identification": true,
+          "source": true,
+          "statistical_reporting": true,
+          "study_id": true,
+          "synthetic_data_declaration": true
+        },
+        "complete": false,
+        "missing_fields": [
+          "evidence_category"
+        ]
+      },
+      "evidence_id": "EVID-QC-010",
+      "evidence_quality": "INSUFFICIENT",
+      "final_review_status": "OPEN",
+      "human_review_required": true,
+      "index": 10,
+      "reason": "Required evidence information is incomplete.",
+      "reviewer_status": "NOT REVIEWED",
+      "study_id": "STUDY-QC-010",
+      "synthetic_data_declaration": "SAMPLE / SYNTHETIC / FOR SOFTWARE TESTING",
+      "validation": {
+        "errors": [],
+        "valid": true
+      }
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scientific_conclusion": null
+}
