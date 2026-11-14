@@ -20,7 +20,8 @@ import argparse
 import json
 from pathlib import Path
 from typing import Any
-
+from functools import lru_cache
+from jsonschema import Draft202012Validator
 
 ENGINE_VERSION = "1.0.0"
 SCHEMA_VERSION = "1.0.0"
@@ -108,6 +109,24 @@ CONTENT_FIELDS = [
 ]
 
 
+
+
+@lru_cache(maxsize=1)
+def get_schema_validator():
+    schema_path = (
+        Path(__file__).resolve().parent.parent
+        / "schemas"
+        / "evidence_qc_schema_v1.0.0.json"
+    )
+
+    with open(schema_path, encoding="utf-8") as file:
+        schema = json.load(file)
+
+    Draft202012Validator.check_schema(schema)
+
+    return Draft202012Validator(schema)
+
+
 def _blank(value: Any) -> bool:
     """Return True when a value is missing or blank."""
     return value is None or value == ""
@@ -127,6 +146,25 @@ def validate_record(record: dict[str, Any]) -> dict[str, Any]:
             "valid": False,
             "errors": ["Record must be a JSON object."],
         }
+
+    
+    schema_validator = get_schema_validator()
+
+    schema_errors = sorted(
+        schema_validator.iter_errors(record),
+        key=lambda error: str(error.path),
+    )
+
+    for error in schema_errors:
+        location = ".".join(
+            str(part) for part in error.path
+        ) or "<record>"
+
+        errors.append(
+            f"JSON Schema validation failed at {location}: "
+            f"{error.message}"
+        )
+
 
     for field in REQUIRED_FIELDS:
         if field not in record:
@@ -346,6 +384,7 @@ def classify_record(
 
     This is a QC classification only. It is not a scientific conclusion.
     """
+ 
     duplicate_ids = duplicate_ids or set()
     conflict_study_ids = conflict_study_ids or set()
 
