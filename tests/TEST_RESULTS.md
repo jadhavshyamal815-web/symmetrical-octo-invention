@@ -1,32 +1,26 @@
-
 # Test Results
 
 ## Project
 BHIV Biotech - Biosimilarity & Preclinical Evidence QC Engine
 
 ## Test Command
-
 python -m pytest -q
 
 ## Latest Test Result
-
-27 passed in 0.72s
+28 passed
 
 ## Verification Status
-
 PASS
 
 ## JSON Schema Validation
-
 - JSON Schema structure validation: PASSED
 - Complete evidence records: PASSED
 - Intentionally invalid evidence records: Correctly detected
-- Expected invalid records: 5
-- Synthetic dataset validation: PASSED
+- Runtime JSON Schema validation: PASSED
+- process_dataset() integration: PASSED
 
 ## Quality Control Verification
-
-The automated test suite successfully verifies:
+The automated test suite verifies:
 
 1. Evidence record validation.
 2. Evidence completeness assessment.
@@ -35,6 +29,7 @@ The automated test suite successfully verifies:
 5. Conflicting evidence detection.
 6. Human review requirements.
 7. JSON Schema validation.
+8. Runtime schema integration.
 
 ## Important Data Declaration
 
@@ -46,7 +41,6 @@ This software validation does not establish biosimilarity,
 clinical equivalence, safety, efficacy, or regulatory validity.
 
 ## Final Verification
-
-All 27 automated tests passed successfully.
+All 28 automated tests passed successfully.
 
 Verification Status: PASS
