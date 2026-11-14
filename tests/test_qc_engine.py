@@ -221,3 +221,23 @@ def test_scientific_conclusion_is_not_created():
     result = process_dataset([record])
 
     assert result["scientific_conclusion"] is None
+
+def test_process_dataset_applies_json_schema_validation():
+    record = make_complete_record()
+    record["source"] = ""
+
+    result = process_dataset([record])
+
+    validation = result["results"][0]["validation"]
+
+    assert validation["valid"] is False
+
+    assert any(
+        "JSON Schema validation failed at source" in error
+        for error in validation["errors"]
+    )
+
+    assert (
+        result["results"][0]["evidence_quality"]
+        == "INSUFFICIENT"
+    )
